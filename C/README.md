@@ -58,3 +58,8 @@ S(Strength)    信号强度即大小.
 
     Extremely strong signals, perfectly readable.
 
+**第 0003 题：**奇偶个数
+
+你的程序要读入一系列正整数数据，输入-1表示输入结束，-1本身不是输入的数据。程序输出读到的数据中的奇数和偶数的个数。
+
+
