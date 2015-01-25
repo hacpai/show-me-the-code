@@ -137,3 +137,10 @@ n 位整数相乘形成的最大回文数
 
 在 Python 中使用 sqlite，并且实现参数化查询，即当输入一个 name 时，显示 name 的相关信息
 
+第 0021 题：**用 Django Web 开发框架搭建一个本地的 Web 站点并且编写 Django 应用，在不同 url  下完成以下功能：
+
+1. `/hello` 对任意 Request 返回 "Hello world"
+2. `/time`  运用模板动态显示 "现在的时间是..."
+3. `/insert` 创建模型，安装数据库，以表单的形式要求用户填入联系人的 name, sex, phone, email, address 并且在 Python 中获得输入的内容插入于数据库中
+4. `/list` 在网页上显示联系人信息
+
