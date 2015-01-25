@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>浏览联系人</title>
+    </head>
+    <form>
+    ￼￼<table border=1 align="center">
+        <tr>
+            <th>姓名</th><th>性别</th><th>电话</th><th>Email</th><th>地址</th> </tr>
+        {% for people in people_list %}
+        <tr>
+            <td>{{ people.name }}</td>
+            <td>{% if people.sex %} 男 {% else %} 女 {% endif %}</td> <td>{{ people.phone }}</td>
+            <td>{{ people.email }}</td>
+            <td>{{ people.address }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </form>
+</html>
