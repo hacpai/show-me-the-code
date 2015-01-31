@@ -147,3 +147,21 @@ id  | name   | room  | tel
 **第 0022 题：**任一个英文的纯文本文件，统计其中的单词出现的个数。
 
 **第 0023 题：**遍历 names.txt 文件，输出长度最长的回文人名。
+
+**第 0024 题：**Write a function that draws a grid like the following:
+
+```
++ - - - -  + - - - -  +
+|          |          |
+|          |          |
+|          |          |
+|          |          |
++ - - - -  + - - - -  +
+|          |          |
+|          |          |
+|          |          |
+|          |          |
++ - - - -  + - - - -  +
+```
+
+And write a function that draws a similar grid with four rows and four  columns.
