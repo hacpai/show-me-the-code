@@ -1,8 +1,10 @@
 def is_palin_str ( name ):
-    for i in range( len( name ) / 2 ):
-        if name[i] != name[-1-i]:
-            return False
-    return True
+    #for i in range( len( name ) / 2 ):
+        #if name[i] != name[-1-i]:
+    if name[::] != name[::-1]:
+        return False
+    else:
+        return True
 
 print "The name list is: "
 
