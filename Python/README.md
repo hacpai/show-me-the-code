@@ -165,3 +165,6 @@ id  | name   | room  | tel
 ```
 
 And write a function that draws a similar grid with four rows and four  columns.
+
+**第 0025 题：**用 Swampy 包中的 TurtleWorld 模块画如图所示的花的形状。
+
