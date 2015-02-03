@@ -215,3 +215,11 @@ Write a function named ack that evaluates Ackermann’s function. Use your funct
 **第 0030 题：**A palindrome is a word that is spelled the same backward and forward, like “noon” and “redivider”. **Recursively**, a word is a palindrome if the first and last letters are the same and the middle is a palindrome.
 
 Write a function called `is_palindrome` that takes a string argument and returns True if it is a palindrome and False otherwise.
+
+**第 0031 题：**The greatest common divisor (GCD) of a and b is the largest number that divides both of them with no remainder.
+
+One way to find the GCD of two numbers is Euclid’s algorithm, which is based on the observation that if r is the remainder when a is divided by b, then gcd(a, b) = gcd(b, r). As a base case, we can use gcd(a, 0) = a.
+
+Write a function called gcd that takes parameters a and b and returns their greatest common divisor.
+
+Credit: This exercise is based on an example from Abelson and Sussman’s Structure and Interpre- tation of Computer Programs.
