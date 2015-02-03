@@ -212,3 +212,6 @@ turtle to draw a Koch curve with the given length.
 
 Write a function named ack that evaluates Ackermann’s function. Use your function to evaluate ack(3, 4), which should be 125. What happens for larger values of m and n?
 
+**第 0030 题：**A palindrome is a word that is spelled the same backward and forward, like “noon” and “redivider”. **Recursively**, a word is a palindrome if the first and last letters are the same and the middle is a palindrome.
+
+Write a function called `is_palindrome` that takes a string argument and returns True if it is a palindrome and False otherwise.
