@@ -206,3 +206,9 @@ The exception is if x is less than 3: in that case, you can just draw a straight
 turtle to draw a Koch curve with the given length.
 2. Write a function called `snowflake` that draws three Koch curves to make the outline of a snowflake.
 
+**第 0029 题：**The Ackermann function, A(m, n), is defined:
+
+![](http://ww4.sinaimg.cn/large/8178ba0ejw1eowjour35sj20jq03i0sr.jpg)
+
+Write a function named ack that evaluates Ackermann’s function. Use your function to evaluate ack(3, 4), which should be 125. What happens for larger values of m and n?
+
