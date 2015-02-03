@@ -167,4 +167,16 @@ id  | name   | room  | tel
 And write a function that draws a similar grid with four rows and four  columns.
 
 **第 0025 题：**用 Swampy 包中的 TurtleWorld 模块画如图所示的花的形状。
+![](http://ww2.sinaimg.cn/large/8178ba0egw1eova6ruzltj20jp04zjrp.jpg)
 
+**第 0026 题：**Fermat’s Last Theorem says that there are no integers a, b, and c such that
+
+![](http://ww1.sinaimg.cn/large/8178ba0egw1eow35k15suj20ju02tdfp.jpg)
+
+1. Write a function named `check_fermat` that takes four parameters—a, b, c and n—and that checks to see if Fermat’s theorem holds. If n is greater than 2 and it turns out to be true that
+
+![](http://ww1.sinaimg.cn/large/8178ba0egw1eow36kxcmrj20je01kq2p.jpg)
+
+the program should print, “Holy smokes, Fermat was wrong!” Otherwise the program should print, “No, that doesn’t work.”
+
+2. Write a function that prompts the user to input values for a, b, c and n, converts them to integers, and uses check_fermat to check whether they violate Fermat’s theorem.
