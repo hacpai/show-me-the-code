@@ -239,3 +239,12 @@ Credit: This exercise is based on an example from Abelson and Sussman’s Struct
 Write a function called `eval_loop` that iteratively prompts the user, takes the resulting input and evaluates it using eval, and prints the result.
 
 It should continue until the user enters 'done', and then return the value of the last expression it evaluated.
+
+**第 0033 题：**Write a function `square_root` using Newton's method.
+
+To test the square root algorithm in this chapter, you could compare it with math.sqrt. Write a function named test_square_root that prints a table like this:
+
+![](http://ww1.sinaimg.cn/large/8178ba0ejw1eoxe7st1m7j20jx06rq3o.jpg)
+
+The first column is a number, a; the second column is the square root of a computed with the function `square_root`; the third column is the square root computed by `math.sqrt`; the fourth column is the absolute value of the difference between the two estimates.
+
