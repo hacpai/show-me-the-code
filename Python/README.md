@@ -248,3 +248,8 @@ To test the square root algorithm in this chapter, you could compare it with mat
 
 The first column is a number, a; the second column is the square root of a computed with the function `square_root`; the third column is the square root computed by `math.sqrt`; the fourth column is the absolute value of the difference between the two estimates.
 
+**第 0034 题：**The mathematician Srinivasa Ramanujan found an infinite series that can be used to generate a numerical approximation of π:
+
+![](http://ww4.sinaimg.cn/large/8178ba0ejw1eoxgcpyz8bj20jy02hdfs.jpg)
+
+Write a function called `estimate_pi` that uses this formula to compute and return an estimate of π. It should use a while loop to compute terms of the summation until the last term is smaller than 1e-15 (which is Python notation for 10−15). You can check the result by comparing it to math.pi.
