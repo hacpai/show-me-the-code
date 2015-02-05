@@ -253,3 +253,13 @@ The first column is a number, a; the second column is the square root of a compu
 ![](http://ww4.sinaimg.cn/large/8178ba0ejw1eoxgcpyz8bj20jy02hdfs.jpg)
 
 Write a function called `estimate_pi` that uses this formula to compute and return an estimate of π. It should use a while loop to compute terms of the summation until the last term is smaller than 1e-15 (which is Python notation for 10−15). You can check the result by comparing it to math.pi.
+
+**第 0035 题：**ROT13 is a weak form of encryption that involves “rotating” each letter in a word by 13 places. To rotate a letter means to shift it through the alphabet, wrapping around to the beginning if necessary, so ’A’ shifted by 3 is ’D’ and ’Z’ shifted by 1 is ’A’.
+
+Write a function called `rotate_word` that takes a string and an integer as parameters, and that returns a new string that contains the letters from the original string “rotated” by the given amount.
+
+For example, “cheer” rotated by 7 is “jolly” and “melon” rotated by -10 is “cubed”.
+
+You might want to use the built-in functions ord, which converts a character to a numeric code, and chr, which converts numeric codes to characters.
+
+Potentially offensive jokes on the Internet are sometimes encoded in ROT13.
