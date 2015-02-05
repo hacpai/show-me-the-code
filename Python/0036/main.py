@@ -1,13 +1,15 @@
 def nested_sum( nested_list ):
     """Add up the elements from all of the nested list.
     """
-    accumulator = 0
+    global accumulator
+
     for i in nested_list:
         if type( i ) == type( [] ):
-            accumulator += nested_sum( i )
-            return accumulator
-        accumulator += i
+            nested_sum( i )
+        else:
+            accumulator += i
     return accumulator
 
 
-print nested_sum( [  2, 21 , 2, 2, [1, 2] ] )
+accumulator = 0
+print nested_sum( [  2, 21 ,1, [ 1,[1, 2] ], [2, 2], [1,[1,2],2] ] )
