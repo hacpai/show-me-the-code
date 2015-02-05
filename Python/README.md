@@ -265,3 +265,5 @@ You might want to use the built-in functions ord, which converts a character to 
 Potentially offensive jokes on the Internet are sometimes encoded in ROT13.
 
 **第 0036 题：**Write a function called `nested_sum` that takes a nested list of integers and add up the elements from all of the nested lists.
+
+**第 0037 题：**write a function named capitalize_nested that takes a nested list of strings and returns a new nested list with all strings capitalized.
