@@ -289,3 +289,8 @@ Write a function called bisect that takes a sorted list and a target value and r
 Or you could read the documentation of the bisect module and use that!
 
 **第 0041 题：**Two words are a “reverse pair” if each is the reverse of the other. Write a program that finds all the reverse pairs in the word list.
+
+**第 0042 题：**Two words “interlock” if taking alternating letters from each forms a new word. For example, “shoe” and “cold” interlock to form “schooled.”
+
+1. Write a program that finds all pairs of words that interlock. Hint: don’t enumerate all pairs!
+2. Can you find any words that are three-way interlocked; that is, every third letter forms a word, starting from the first, second or third?
