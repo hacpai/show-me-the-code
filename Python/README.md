@@ -267,3 +267,9 @@ Potentially offensive jokes on the Internet are sometimes encoded in ROT13.
 **第 0036 题：**Write a function called `nested_sum` that takes a nested list of integers and add up the elements from all of the nested lists.
 
 **第 0037 题：**write a function named capitalize_nested that takes a nested list of strings and returns a new nested list with all strings capitalized.
+
+**第 0038 题：**The (so-called) Birthday Paradox:
+
+1. Write a function called `has_duplicates` that takes a list and returns True if there is any element that appears more than once. It should not modify the original list.
+
+2. If there are 23 students in your class, what are the chances that two of you have the same birthday? You can estimate this probability by generating random samples of 23 birthdays and checking for matches. Hint: you can generate random birthdays with the randint function in the random module.
