@@ -29,7 +29,7 @@ def make_word_list_v2():
 
 def make_word_list_v2_1():
     """Reads the file words.txt and builds a list with one element per word.
-    using idiom t = t + [x]
+    using idiom t += [x]
     """
     t = []
     fin = open( 'words.txt', 'r' )
