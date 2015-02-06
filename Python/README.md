@@ -224,7 +224,7 @@ Write a function called gcd that takes parameters a and b and returns their grea
 
 Credit: This exercise is based on an example from Abelson and Sussman’s Structure and Interpre- tation of Computer Programs.
 
-**第 0032 题：**The built-in function eval takes a string and evaluates it using the Python inter- preter. For example:
+**第 0032 题：**The built-in function eval takes a string and evaluates it using the Python interpreter. For example:
 
 ```
 >>> eval('1 + 2 * 3')
@@ -242,7 +242,7 @@ It should continue until the user enters 'done', and then return the value of th
 
 **第 0033 题：**Write a function `square_root` using Newton's method.
 
-To test the square root algorithm in this chapter, you could compare it with math.sqrt. Write a function named test_square_root that prints a table like this:
+To test the square root algorithm in this chapter, you could compare it with math.sqrt. Write a function named `test_square_root` that prints a table like this:
 
 ![](http://ww1.sinaimg.cn/large/8178ba0ejw1eoxe7st1m7j20jx06rq3o.jpg)
 
@@ -266,10 +266,14 @@ Potentially offensive jokes on the Internet are sometimes encoded in ROT13.
 
 **第 0036 题：**Write a function called `nested_sum` that takes a nested list of integers and add up the elements from all of the nested lists.
 
-**第 0037 题：**write a function named capitalize_nested that takes a nested list of strings and returns a new nested list with all strings capitalized.
+**第 0037 题：**write a function named `capitalize_nested` that takes a nested list of strings and returns a new nested list with all strings capitalized.
 
 **第 0038 题：**The (so-called) Birthday Paradox:
 
 1. Write a function called `has_duplicates` that takes a list and returns True if there is any element that appears more than once. It should not modify the original list.
 
 2. If there are 23 students in your class, what are the chances that two of you have the same birthday? You can estimate this probability by generating random samples of 23 birthdays and checking for matches. Hint: you can generate random birthdays with the randint function in the random module.
+
+**第 0039 题：**Write a function that reads the file words.txt and builds a list with one element per word. Write two versions of this function, one using the append method and the other using the idiom t = t + [x]. Which one takes longer to run? Why?
+
+Hint: use the time module to measure elapsed time.
