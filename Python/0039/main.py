@@ -2,7 +2,7 @@ import time
 
 
 def make_word_list_v1():
-    """Reads hte file words.txt and builds a list with one element per word.
+    """Reads the file words.txt and builds a list with one element per word.
     using append method
     """
     t = []
@@ -15,7 +15,7 @@ def make_word_list_v1():
 
 
 def make_word_list_v2():
-    """Reads hte file words.txt and builds a list with one element per word.
+    """Reads the file words.txt and builds a list with one element per word.
     using idiom t = t + [x]
     """
     t = []
@@ -28,7 +28,7 @@ def make_word_list_v2():
 
 
 def make_word_list_v2_1():
-    """Reads hte file words.txt and builds a list with one element per word.
+    """Reads the file words.txt and builds a list with one element per word.
     using idiom t = t + [x]
     """
     t = []
