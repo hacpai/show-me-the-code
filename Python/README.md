@@ -297,4 +297,8 @@ Or you could read the documentation of the bisect module and use that!
 
 **第 0043 题：**Memoize the Ackermann function from Problem 0029 and see if memoization makes it possible to evaluate the function with bigger arguments.
 
-**第 0044 题：**Read the documentation of the dictionary method setdefault and use it to write a more concise version of invert_dict. 
+**第 0044 题：**Read the documentation of the dictionary method setdefault and use it to write a more concise version of `invert_dict`. 
+
+**第 0045 题：**f you did Problem 0038, you already have a function named `has_duplicates` that takes a list as a parameter and returns True if there is any object that appears more than once in the list.
+
+Use a dictionary to write a faster, simpler version of has_duplicates.
