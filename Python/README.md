@@ -296,3 +296,5 @@ Or you could read the documentation of the bisect module and use that!
 2. Can you find any words that are three-way interlocked; that is, every third letter forms a word, starting from the first, second or third?
 
 **第 0043 题：**Memoize the Ackermann function from Problem 0029 and see if memoization makes it possible to evaluate the function with bigger arguments.
+
+**第 0044 题：**Read the documentation of the dictionary method setdefault and use it to write a more concise version of invert_dict. 
