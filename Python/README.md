@@ -314,3 +314,19 @@ Modify previous function so that words with the same length appear in random ord
 **第 0048 题：**Write a function called `most_frequent` that takes a string and prints the letters in decreasing order of frequency. 
 
 Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at http: // en.wikipedia.org/wiki/Letter_frequencies. 
+
+**第 0049 题：More anagrams!
+
+Write a program that reads a word list from a file and prints all the sets of words that are anagrams.
+
+Here is an example of what the output might look like:
+```
+    ['deltas', 'desalt', 'lasted', 'salted', 'slated', 'staled']
+    ['retainers', 'ternaries']
+    ['generating', 'greatening']
+    ['resmelts', 'smelters', 'termless']
+```
+Hint: you might want to build a dictionary that maps from a set of letters to a list of words that can be spelled with those letters. The question is, how can you represent the set of letters in a way that can be used as a key?
+
+1. Modifythepreviousprogramsothatitprintsthelargestsetofanagramsfirst,followedbythe second largest set, and so on.
+2. In Scrabble a “bingo” is when you play all seven tiles in your rack, along with a letter on the board, to form an eight-letter word. What set of 8 letters forms the most possible bingos? Hint: there are seven.
