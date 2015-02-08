@@ -310,3 +310,7 @@ Write a program that reads a wordlist and finds all the rotate pairs.
 **第 0047 题：**Write a funciton that ties are broken by comparing words, so words with the same length appear in reverse alphabetical order. For other applications you might want to break ties at random.
 
 Modify previous function so that words with the same length appear in random order. Hint: see the random function in the random module.
+
+**第 0048 题：**Write a function called `most_frequent` that takes a string and prints the letters in decreasing order of frequency. 
+
+Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at http: // en.wikipedia.org/wiki/Letter_frequencies. 
