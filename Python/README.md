@@ -301,8 +301,12 @@ Or you could read the documentation of the bisect module and use that!
 
 **第 0045 题：**If you did Problem 0038, you already have a function named `has_duplicates` that takes a list as a parameter and returns True if there is any object that appears more than once in the list.
 
-Use a dictionary to write a faster, simpler version of has_duplicates.
+Use a dictionary to write a faster, simpler version of `has_duplicates`.
 
 **第 0046 题：**Two words are “rotate pairs” if you can rotate one of them and get the other (see `rotate_word` in Problem 0035).
 
 Write a program that reads a wordlist and finds all the rotate pairs.
+
+**第 0047 题：**Write a funciton that ties are broken by comparing words, so words with the same length appear in reverse alphabetical order. For other applications you might want to break ties at random.
+
+Modify previous function so that words with the same length appear in random order. Hint: see the random function in the random module.
