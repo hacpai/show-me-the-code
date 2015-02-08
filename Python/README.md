@@ -330,3 +330,5 @@ Hint: you might want to build a dictionary that maps from a set of letters to a 
 
 1. Modifythepreviousprogramsothatitprintsthelargestsetofanagramsfirst,followedbythe second largest set, and so on.
 2. In Scrabble a “bingo” is when you play all seven tiles in your rack, along with a letter on the board, to form an eight-letter word. What set of 8 letters forms the most possible bingos? Hint: there are seven.
+
+**第 0050 题：**Two words form a “metathesis pair” if you can transform one into the other by swapping two letters; for example, “converse” and “conserve.” Write a program that finds all of the metathesis pairs in the dictionary. Hint: don’t test all pairs of words, and don’t test all possible swaps. 
