@@ -332,3 +332,15 @@ Hint: you might want to build a dictionary that maps from a set of letters to a 
 2. In Scrabble a “bingo” is when you play all seven tiles in your rack, along with a letter on the board, to form an eight-letter word. What set of 8 letters forms the most possible bingos? Hint: there are seven.
 
 **第 0050 题：**Two words form a “metathesis pair” if you can transform one into the other by swapping two letters; for example, “converse” and “conserve.” Write a program that finds all of the metathesis pairs in the dictionary. Hint: don’t test all pairs of words, and don’t test all possible swaps. 
+
+**第 0051 题：**Write a function named `choose_from_hist` that takes a histogram as defined and returns a random value from the histogram, chosen with probability in proportion to frequency.
+
+A efficient algorithm is :
+
+1. Use keys to get a list of the words in the book.
+2. Build a list that contains the cumulative sum of the word frequencies. The last item in this list is the total number of words in the book, n.
+3. Choose a random number from 1 to n. Use a bisection search (Problem 0040 ) to find the index where the random number would be inserted in the cumulative sum.
+4. Use the index to find the corresponding word in the word list.
+
+Write a program that uses this algorithm to choose a random word from the book. 
+
