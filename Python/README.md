@@ -370,3 +370,7 @@ So if you plot log f versus log r, you should get a straight line with slope -s 
 Write a program that reads a text from a file, counts word frequencies, and prints one line for each word, in descending order of frequency, with log f and log r. Use the graphing program of your choice to plot the results and check whether they form a straight line. Can you estimate the value of s?
 
 To make the plots, you might have to install matplotlib (see http: // matplotlib. sourceforge. net/ ).
+
+第 0054 题：**Write a function “walks” through a directory, prints the names of all the files, and calls itself recursively on all the directories.
+
+The os module provides a function called walk that is similar to this one but more versatile. Read the documentation and use it to print the names of the files in a given directory and its subdirectories.
