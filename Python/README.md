@@ -378,3 +378,7 @@ The os module provides a function called walk that is similar to this one but mo
 **第 0055 题：**Write a function called sed that takes as arguments a pattern string, a replacement string, and two filenames; it should read the first file and write the contents into the second file (creating it if necessary). If the pattern string appears anywhere in the file, it should be replaced with the replacement string.
 
 If an error occurs while opening, reading, writing or closing files, your program should catch the exception, print an error message, and exit.
+
+**第 0056 题：**If you finish Problem 0049, you’ll see that it creates a dictionary that maps from a sorted string of letters to the list of words that can be spelled with those letters. For example, ’opst’ maps to the list [’opts’, ’post’, ’pots’, ’spot’, ’stop’, ’tops’].
+
+Write a module that imports Solution 0049 and provides two new functions:`store_anagrams` should store the anagram dictionary in a “shelf;” `read_anagrams` should look up a word and return a list of its anagrams.
