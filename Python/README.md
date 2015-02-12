@@ -355,3 +355,18 @@ He was very clever, be it sweetness or be angry, ashamed or only amused, at such
 ```
 For this example, I left the punctuation attached to the words. The result is almost syntactically correct, but not quite. Semantically, it almost makes sense, but not quite.
 
+**第 0053 题：**The “rank” of a word is its position in a list of words sorted by frequency: the most common word has rank 1, the second most common has rank 2, etc.
+
+Zipf’s law describes a relationship between the ranks and frequencies of words in natural languages (http://en.wikipedia.org/wiki/Zipf’s_law ). Specifically, it predicts that the frequency, f, of the word with rank r is:
+
+![](http://ww1.sinaimg.cn/large/8178ba0ejw1ep6j8kt9dwj20l601xt8h.jpg)
+
+where s and c are parameters that depend on the language and the text. If you take the logarithm of both sides of this equation, you get:
+
+![](http://ww2.sinaimg.cn/large/8178ba0ejw1ep6j9cj3v7j20l201ya9v.jpg)
+
+So if you plot log f versus log r, you should get a straight line with slope -s and intercept log c.
+
+Write a program that reads a text from a file, counts word frequencies, and prints one line for each word, in descending order of frequency, with log f and log r. Use the graphing program of your choice to plot the results and check whether they form a straight line. Can you estimate the value of s?
+
+To make the plots, you might have to install matplotlib (see http: // matplotlib. sourceforge. net/ ).
