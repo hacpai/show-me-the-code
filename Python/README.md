@@ -406,3 +406,5 @@ Run this code and follow the instructions you see there.
 **第 0060 题：**Write a function called `distance_between_points` that takes two Points as ar- guments and returns the distance between them.
 
 **第 0061 题：**Write a function named `move_rectangle` that takes a Rectangle and two numbers named dx and dy. It should change the location of the rectangle by adding dx to the x coordinate of corner and adding dy to the y coordinate of corner.
+
+**第 0062 题：**Write a version of `move_rectangle` that creates and returns a new Rectangle instead of modifying the old one.
