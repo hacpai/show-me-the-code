@@ -390,3 +390,5 @@ Write a module that imports Solution 0049 and provides two new functions:`store_
 2. To recognize duplicates, you can use md5sum to compute a “checksum” for each files. If two files have the same checksum, they probably have the same contents.
 
 3. To double-check, you can use the Unix command diff.
+
+**第 0058 题：**有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。
