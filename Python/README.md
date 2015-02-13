@@ -392,3 +392,13 @@ Write a module that imports Solution 0049 and provides two new functions:`store_
 3. To double-check, you can use the Unix command diff.
 
 **第 0058 题：**有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。
+
+**第 0059 题：**The urllib module provides methods for manipulating URLs and downloading information from the web. The following example downloads and prints a secret message from thinkpython.com:
+
+```python
+import urllib
+conn = urllib.urlopen('http://thinkpython.com/secret.html')
+for line in conn:
+    print line.strip()
+```
+Run this code and follow the instructions you see there.
