@@ -382,3 +382,11 @@ If an error occurs while opening, reading, writing or closing files, your progra
 **第 0056 题：**If you finish Problem 0049, you’ll see that it creates a dictionary that maps from a sorted string of letters to the list of words that can be spelled with those letters. For example, ’opst’ maps to the list [’opts’, ’post’, ’pots’, ’spot’, ’stop’, ’tops’].
 
 Write a module that imports Solution 0049 and provides two new functions:`store_anagrams` should store the anagram dictionary in a “shelf;” `read_anagrams` should look up a word and return a list of its anagrams.
+
+**第 0057 题：**In a large collection of MP3 files, there may be more than one copy of the same song, stored in different directories or with different file names. The goal of this exercise is to search for duplicates.
+
+1. Writeaprogramthatsearchesadirectoryandallofitssubdirectories,recursively,andreturns a list of complete paths for all files with a given suffix (like .mp3). Hint: os.path provides several useful functions for manipulating file and path names.
+
+2. To recognize duplicates, you can use md5sum to compute a “checksum” for each files. If two files have the same checksum, they probably have the same contents.
+
+3. To double-check, you can use the Unix command diff.
