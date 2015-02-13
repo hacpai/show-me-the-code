@@ -402,3 +402,6 @@ for line in conn:
     print line.strip()
 ```
 Run this code and follow the instructions you see there.
+
+**第 0060 题：**Write a function called `distance_between_points` that takes two Points as ar- guments and returns the distance between them.
+
