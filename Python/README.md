@@ -144,7 +144,7 @@ id  | name   | room  | tel
 3. `/insert` 创建模型，安装数据库，以表单的形式要求用户填入联系人的 name, sex, phone, email, address 并且在 Python 中获得输入的内容插入于数据库中
 4. `/list` 在网页上显示联系人信息
 
-**第 0022 题：**任一个英文的纯文本文件，统计其中的单词出现的个数。
+**第 0022 题：**任一个英文的纯文本文件，统计其中的单词出现的个数。via [Yixiaohan/show-me-the-code 第 0004 题](https://github.com/Yixiaohan/show-me-the-code)
 
 **第 0023 题：**遍历 names.txt 文件，输出长度最长的回文人名。
 
@@ -391,7 +391,7 @@ Write a module that imports Solution 0049 and provides two new functions:`store_
 
 3. To double-check, you can use the Unix command diff.
 
-**第 0058 题：**有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。
+**第 0058 题：**有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。 via [Yixiaohan/show-me-the-code 第 0013 题](https://github.com/Yixiaohan/show-me-the-code)
 
 **第 0059 题：**The urllib module provides methods for manipulating URLs and downloading information from the web. The following example downloads and prints a secret message from thinkpython.com:
 
