@@ -477,3 +477,7 @@ Then use `mul_time` to write a function that takes a Time object that represents
 **第 0071 题：**Rewrite `time_to_int` (Problem 0068 ) as a method. 
 
 **第 0072 题：**Write an init method for the Point class that takes x and y as optional parameters and assigns them to the corresponding attributes.
+
+**第 0073 题：**Write a str method for the Point class. Create a Point object and print it.
+
+Write an add method for the Point class.
