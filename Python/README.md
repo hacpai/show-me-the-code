@@ -481,3 +481,9 @@ Then use `mul_time` to write a function that takes a Time object that represents
 **第 0073 题：**Write a str method for the Point class. Create a Point object and print it.
 
 Write an add method for the Point class.
+
+**第 0074 题：**Write an add method for Points that works with either a Point object or a tuple:
+
+If the second operand is a Point, the method should return a new Point whose x coordinate is the sum of the x coordinates of the operands, and likewise for the y coordinates.
+
+If the second operand is a tuple, the method should add the first element of the tuple to the x coordinate and the second element to the y coordinate, and return a new Point with the result.
