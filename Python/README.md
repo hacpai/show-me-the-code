@@ -475,3 +475,5 @@ Then use `mul_time` to write a function that takes a Time object that represents
 4. For a little more challenge, write the more general version that computes the day when one person is n times older than the other.
 
 **第 0071 题：**Rewrite `time_to_int` (Problem 0068 ) as a method. 
+
+**第 0072 题：**Write an init method for the Point class that takes x and y as optional parameters and assigns them to the corresponding attributes.
