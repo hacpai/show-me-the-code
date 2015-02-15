@@ -457,3 +457,6 @@ canvas.polygon(points, fill='blue')
 **第 0066 题：**Write a function increment which adds a given number of seconds to a Time object, can be written naturally as a modifier. Challenge: don't contain any loops.
 
 **第 0067 题：**Write a “pure” version of increment that creates and returns a new Time object rather than modifying the parameter.
+
+**第 0068 题：**Rewrite increment using `time_to_int` and `int_to_time`.
+
