@@ -473,3 +473,5 @@ Then use `mul_time` to write a function that takes a Time object that represents
 3. For two people born on different days, there is a day when one is twice as old as the other. That’s their Double Day. Write a program that takes two birthdays and computes their Double Day.
 
 4. For a little more challenge, write the more general version that computes the day when one person is n times older than the other.
+
+**第 0071 题：**Rewrite `time_to_int` (Problem 0068 ) as a method. 
