@@ -489,3 +489,14 @@ If the second operand is a Point, the method should return a new Point whose x c
 If the second operand is a tuple, the method should add the first element of the tuple to the x coordinate and the second element to the y coordinate, and return a new Point with the result.
 
 **第 0075 题：**Download the code from this chapter (http: // thinkpython. com/ code/ Time2. py ). Change the attributes of Time to be a single integer representing seconds since mid- night. Then modify the methods (and the function `int_to_time`) to work with the new implemen- tation. You should not have to modify the test code in main. When you are done, the output should be the same as before. 
+
+**第 0076 题：**This exercise is a cautionary tale about one of the most common, and difficult to
+find, errors in Python. Write a definition for a class named Kangaroo with the following methods:
+
+1. An `__init__` method that initializes an attribute named `pouch_contents` to an empty list.
+2. A method named `put_in_pouch` that takes an object of any type and adds it to `pouch_contents`.
+3. A `__str__` method that returns a string representation of the Kangaroo object and the contents of the pouch.
+
+Test your code by creating two Kangaroo objects, assigning them to variables named kanga and roo, and then adding roo to the contents of kanga’s pouch.
+
+Download http: // thinkpython. com/ code/ BadKangaroo. py . It contains a solution to the previous problem with one big, nasty bug. Find and fix the bug.
