@@ -487,3 +487,5 @@ Write an add method for the Point class.
 If the second operand is a Point, the method should return a new Point whose x coordinate is the sum of the x coordinates of the operands, and likewise for the y coordinates.
 
 If the second operand is a tuple, the method should add the first element of the tuple to the x coordinate and the second element to the y coordinate, and return a new Point with the result.
+
+**第 0075 题：**Download the code from this chapter (http: // thinkpython. com/ code/ Time2. py ). Change the attributes of Time to be a single integer representing seconds since mid- night. Then modify the methods (and the function `int_to_time`) to work with the new implemen- tation. You should not have to modify the test code in main. When you are done, the output should be the same as before. 
