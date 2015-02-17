@@ -476,21 +476,9 @@ Then use `mul_time` to write a function that takes a Time object that represents
 
 **第 0071 题：**Rewrite `time_to_int` (Problem 0068 ) as a method. 
 
-**第 0072 题：**Write an init method for the Point class that takes x and y as optional parameters and assigns them to the corresponding attributes.
+**第 0072 题：**Download the code from this chapter (http: // thinkpython. com/ code/ Time2. py ). Change the attributes of Time to be a single integer representing seconds since mid- night. Then modify the methods (and the function `int_to_time`) to work with the new implemen- tation. You should not have to modify the test code in main. When you are done, the output should be the same as before. 
 
-**第 0073 题：**Write a str method for the Point class. Create a Point object and print it.
-
-Write an add method for the Point class.
-
-**第 0074 题：**Write an add method for Points that works with either a Point object or a tuple:
-
-If the second operand is a Point, the method should return a new Point whose x coordinate is the sum of the x coordinates of the operands, and likewise for the y coordinates.
-
-If the second operand is a tuple, the method should add the first element of the tuple to the x coordinate and the second element to the y coordinate, and return a new Point with the result.
-
-**第 0075 题：**Download the code from this chapter (http: // thinkpython. com/ code/ Time2. py ). Change the attributes of Time to be a single integer representing seconds since mid- night. Then modify the methods (and the function `int_to_time`) to work with the new implemen- tation. You should not have to modify the test code in main. When you are done, the output should be the same as before. 
-
-**第 0076 题：**This exercise is a cautionary tale about one of the most common, and difficult to
+**第 0073 题：**This exercise is a cautionary tale about one of the most common, and difficult to
 find, errors in Python. Write a definition for a class named Kangaroo with the following methods:
 
 1. An `__init__` method that initializes an attribute named `pouch_contents` to an empty list.
@@ -501,4 +489,4 @@ Test your code by creating two Kangaroo objects, assigning them to variables nam
 
 Download http: // thinkpython. com/ code/ BadKangaroo. py . It contains a solution to the previous problem with one big, nasty bug. Find and fix the bug.
 
-**第 0077 题：**Write a `__cmp__` method for Time objects. Hint: you can use tuple comparison, but you also might consider using integer subtraction.
+**第 0074 题：**Write a `__cmp__` method for Time objects. Hint: you can use tuple comparison, but you also might consider using integer subtraction.
