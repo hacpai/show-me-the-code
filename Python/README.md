@@ -490,3 +490,5 @@ Test your code by creating two Kangaroo objects, assigning them to variables nam
 Download http: // thinkpython. com/ code/ BadKangaroo. py . It contains a solution to the previous problem with one big, nasty bug. Find and fix the bug.
 
 **第 0074 题：**Write a `__cmp__` method for Time objects. Hint: you can use tuple comparison, but you also might consider using integer subtraction.
+
+**第 0075 题：**Download my code from (http://thinkpython.com/code/ markov. py ), and follow the steps described above to encapsulate the global variables as attributes of a new class called Markov.
