@@ -1,5 +1,12 @@
 ## Python 练习册
 
+#### 题目来源：####
+
+- 前 23 题(不包括 0022 题)来自 MOOC 哈工大 @carfly 车万翔老师 OJ 作业题。
+- 第 0022 和 0058 题来自[Yixiaohan/show-me-the-code](https://github.com/Yixiaohan/show-me-the-code), 具体题号已在题目中标注。
+- 第 0023 题后面的题目来自 [Think Python](http://www.greenteapress.com/thinkpython/) 章节练习题
+----------
+
 **第 0000 题：**提交 Python 程序，将 Hello World 两个单词分别输出到相邻的两行。（注意：每个单词后面没有空格）
 
 **第 0001 题：**身体质量指数（Body Mass Index，BMI）是根据人的体重和身高计算得出的一个数字，BMI对大多数人来说，是相当可靠的身体肥胖指标，其计算公式为：BMI = Weight/High^2，其中体重单位为公斤，身高单位为米。编写程序，提示用户输入体重和身高的数字，输出BMI。
