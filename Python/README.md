@@ -313,7 +313,7 @@ Modify previous function so that words with the same length appear in random ord
 
 **第 0048 题：**Write a function called `most_frequent` that takes a string and prints the letters in decreasing order of frequency. 
 
-Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at http: // en.wikipedia.org/wiki/Letter_frequencies. 
+Find text samples from several different languages and see how letter frequency varies between languages. Compare your results with the tables at http://en.wikipedia.org/wiki/Letter_frequencies . 
 
 **第 0049 题：More anagrams!
 
@@ -357,7 +357,7 @@ For this example, I left the punctuation attached to the words. The result is al
 
 **第 0053 题：**The “rank” of a word is its position in a list of words sorted by frequency: the most common word has rank 1, the second most common has rank 2, etc.
 
-Zipf’s law describes a relationship between the ranks and frequencies of words in natural languages (http://en.wikipedia.org/wiki/Zipf’s_law ). Specifically, it predicts that the frequency, f, of the word with rank r is:
+Zipf’s law describes a relationship between the ranks and frequencies of words in natural languages (http://en.wikipedia.org/wiki/Zipf's_law). Specifically, it predicts that the frequency, f, of the word with rank r is:
 
 ![](http://ww1.sinaimg.cn/large/8178ba0ejw1ep6j8kt9dwj20l601xt8h.jpg)
 
@@ -444,21 +444,11 @@ points = [[-150,-100], [150, 100], [150, -100]]
 canvas.polygon(points, fill='blue')
 ```
 
-**第 0064 题：**Write a function called `print_time` that takes a Time object and prints it in the form hour:minute:second. Hint: the format sequence '%.2d' prints an integer using at least two digits, including a leading zero if necessary.
-
-**第 0065 题：**Write a boolean function called `is_after` that takes two Time objects, t1 and t2, and returns True if t1 follows t2 chronologically and False otherwise. Challenge: don’t use an if statement.
-
-**第 0066 题：**Write a function increment which adds a given number of seconds to a Time object, can be written naturally as a modifier. Challenge: don't contain any loops.
-
-**第 0067 题：**Write a “pure” version of increment that creates and returns a new Time object rather than modifying the parameter.
-
-**第 0068 题：**Rewrite increment using `time_to_int` and `int_to_time`.
-
-**第 0069 题：**Write a function called `mul_time` that takes a Time object and a number and returns a new Time object that contains the product of the original Time and the number.
+**第 0061 题：**Write a function called `mul_time` that takes a Time object and a number and returns a new Time object that contains the product of the original Time and the number.
 
 Then use `mul_time` to write a function that takes a Time object that represents the finishing time in a race, and a number that represents the distance, and returns a Time object that represents the average pace (time per mile).
 
-**第 0070 题：**The datetime module provides date and time objects that are similar to the Date and Time objects in this chapter, but they provide a rich set of methods and operators.
+**第 0062 题：**The datetime module provides date and time objects that are similar to the Date and Time objects in this chapter, but they provide a rich set of methods and operators.
 
 1. Use the datetime module to write a program that gets the current date and prints the day of the week.
 
@@ -468,11 +458,9 @@ Then use `mul_time` to write a function that takes a Time object that represents
 
 4. For a little more challenge, write the more general version that computes the day when one person is n times older than the other.
 
-**第 0071 题：**Rewrite `time_to_int` (Problem 0068 ) as a method. 
+**第 0063 题：**Download the code from this chapter (http://thinkpython.com/code/Time2.py). Change the attributes of Time to be a single integer representing seconds since midnight. Then modify the methods (and the function `int_to_time`) to work with the new implementation. You should not have to modify the test code in main. When you are done, the output should be the same as before. 
 
-**第 0072 题：**Download the code from this chapter (http: // thinkpython. com/ code/ Time2. py ). Change the attributes of Time to be a single integer representing seconds since mid- night. Then modify the methods (and the function `int_to_time`) to work with the new implemen- tation. You should not have to modify the test code in main. When you are done, the output should be the same as before. 
-
-**第 0073 题：**This exercise is a cautionary tale about one of the most common, and difficult to
+**第 0064 题：**This exercise is a cautionary tale about one of the most common, and difficult to
 find, errors in Python. Write a definition for a class named Kangaroo with the following methods:
 
 1. An `__init__` method that initializes an attribute named `pouch_contents` to an empty list.
@@ -481,8 +469,6 @@ find, errors in Python. Write a definition for a class named Kangaroo with the f
 
 Test your code by creating two Kangaroo objects, assigning them to variables named kanga and roo, and then adding roo to the contents of kanga’s pouch.
 
-Download http: // thinkpython. com/ code/ BadKangaroo. py . It contains a solution to the previous problem with one big, nasty bug. Find and fix the bug.
+Download http://thinkpython.com/code/BadKangaroo.py . It contains a solution to the previous problem with one big, nasty bug. Find and fix the bug.
 
-**第 0074 题：**Write a `__cmp__` method for Time objects. Hint: you can use tuple comparison, but you also might consider using integer subtraction.
-
-**第 0075 题：**Download my code from (http://thinkpython.com/code/ markov. py ), and follow the steps described above to encapsulate the global variables as attributes of a new class called Markov.
+**第 0065 题：**Download my code from (http://thinkpython.com/code/markov.py), and follow the steps described above to encapsulate the global variables as attributes of a new class called Markov.
