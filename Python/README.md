@@ -5,6 +5,7 @@
 - 前 23 题(不包括 0022 题)来自 MOOC 哈工大 @carfly 车万翔老师 OJ 作业题。
 - 第 0022 和 0058 题来自[Yixiaohan/show-me-the-code](https://github.com/Yixiaohan/show-me-the-code), 具体题号已在题目中标注。
 - 第 0023 题后面的题目来自 [Think Python](http://www.greenteapress.com/thinkpython/) 章节练习题
+
 ----------
 
 **第 0000 题：**提交 Python 程序，将 Hello World 两个单词分别输出到相邻的两行。（注意：每个单词后面没有空格）
@@ -479,3 +480,39 @@ Test your code by creating two Kangaroo objects, assigning them to variables nam
 Download http://thinkpython.com/code/BadKangaroo.py . It contains a solution to the previous problem with one big, nasty bug. Find and fix the bug.
 
 **第 0065 题：**Download my code from (http://thinkpython.com/code/markov.py), and follow the steps described above to encapsulate the global variables as attributes of a new class called Markov.
+
+**第 0066 题：**The following are the possible hands in poker, in increasing order of value (and decreasing order of probability):
+
+pair: two cards with the same rank
+
+two pair: two pairs of cards with the same rank
+
+three of a kind: three cards with the same rank
+
+straight: five cards with ranks in sequence (aces can be high or low, so Ace-2-3-4-5 is a straight and so is 10-Jack-Queen-King-Ace, but Queen-King-Ace-2-3 is not.)
+
+flush: five cards with the same suit
+
+full house: three cards with one rank, two cards with another
+
+four of a kind: four cards with the same rank
+
+straight flush: five cards in sequence (as defined above) and with the same suit
+
+The goal of these exercises is to estimate the probability of drawing these various hands.
+
+1. Downloadthefollowingfilesfromhttp://thinkpython.com/code:
+
+Card.py : A complete version of the Card, Deck and Hand classes in this chapter.
+
+PokerHand.py : An incomplete implementation of a class that represents a poker hand, and some code that tests it.
+
+2. If you run PokerHand.py, it deals seven 7-card poker hands and checks to see if any of them contains a flush. Read this code carefully before you go on.
+
+3. Add methods to PokerHand.py named has_pair, has_twopair, etc. that return True or False according to whether or not the hand meets the relevant criteria. Your code should work correctly for “hands” that contain any number of cards (although 5 and 7 are the most common sizes).
+
+4. Write a method named classify that figures out the highest-value classification for a hand and sets the label attribute accordingly. For example, a 7-card hand might contain a flush and a pair; it should be labeled “flush”.
+
+5. When you are convinced that your classification methods are working, the next step is to esti- mate the probabilities of the various hands. Write a function in PokerHand.py that shuffles a deck of cards, divides it into hands, classifies the hands, and counts the number of times various classifications appear.
+
+6. Print a table of the classifications and their probabilities. Run your program with larger and larger numbers of hands until the output values converge to a reasonable degree of accu- racy. Compare your results to the values at http://en.wikipedia.org/wiki/Hand_rankings .
