@@ -15,6 +15,7 @@ class Hist(dict):
         self[x] = self.get(x, 0) + 1
 
 class PokerHand(Hand):
+    """Represents a poker hand."""
 
     labels = ['straightflush', 'fourkind', 'fullhouse', 'flush',
             'straight', 'threekind', 'twopair', 'pair', 'highcard']
@@ -46,7 +47,9 @@ class PokerHand(Hand):
         return False
 
     def check_sets(self, *kinds):
-        """Return True if the number of hand has same ranks, False otherwise.
+        """Checks whether self.sets contains sets that are at least as big as the requirements in kinds.
+
+        kinds: list of int
         """
         for kind, ranks_val in zip(kinds, self.sets):
             if kind > ranks_val:
@@ -90,7 +93,12 @@ class PokerHand(Hand):
         ranks[14] = ranks.get(1, 0)
         return self.check_row(ranks)
 
-    def check_row(self, ranks):
+    def check_row(self, ranks, n=5):
+        """Checks whether the histogram has n ranks in a row.
+
+        hist: map from rank to frequency
+        n: number we need to get to
+        """
         count = 0
         for n in range(1, 15):
             if n in ranks:
