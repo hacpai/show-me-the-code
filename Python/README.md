@@ -516,3 +516,7 @@ PokerHand.py : An incomplete implementation of a class that represents a poker h
 5. When you are convinced that your classification methods are working, the next step is to esti- mate the probabilities of the various hands. Write a function in PokerHand.py that shuffles a deck of cards, divides it into hands, classifies the hands, and counts the number of times various classifications appear.
 
 6. Print a table of the classifications and their probabilities. Run your program with larger and larger numbers of hands until the output values converge to a reasonable degree of accu- racy. Compare your results to the values at http://en.wikipedia.org/wiki/Hand_rankings .
+
+**第 0067 题：**Write an appropriately general set of functions that can draw shapes as fllow.
+
+![](http://ww1.sinaimg.cn/large/8178ba0ejw1epnx6ht8qpj20jv03ymx7.jpg)
