@@ -71,6 +71,8 @@
 
 **第 0016 题：**倒排索引（Inverted index），也常被称为反向索引，是一种索引方法，用来存储某个单词存在于哪些文档之中。是信息检索系统中最常用的数据结构。通过倒排索引，可以根据单词快速获取包含这个单词的文档列表。
 
+![](http://ww4.sinaimg.cn/large/8178ba0ejw1epo6rz23fwj20ru0kk0xh.jpg)
+
 本作业主要完成以下四个功能：
 
 (1). 建立索引：首先输入100行字符串，用于构建倒排索引，每行字符串由若干不含标点符号的、全部小写字母组成的单词构成，每个单词之间以空格分隔。依次读入每个单词，并组成一个由<单词, 每个单词出现的行号集合>构成的字典，其中行号从1开始计数。
@@ -175,7 +177,7 @@ id  | name   | room  | tel
 And write a function that draws a similar grid with four rows and four  columns.
 
 **第 0025 题：**用 Swampy 包中的 TurtleWorld 模块画如图所示的花的形状。
-![](http://ww2.sinaimg.cn/large/8178ba0egw1eova6ruzltj20jp04zjrp.jpg)
+![](http://ww2.sinaimg.cn/large/8178ba0ejw1epob9bvgwkg20b90b6465.gif)
 
 **第 0026 题：**Fermat’s Last Theorem says that there are no integers a, b, and c such that
 
@@ -213,6 +215,8 @@ The exception is if x is less than 3: in that case, you can just draw a straight
 1. Write a function called `koch` that takes a turtle and a length as parameters, and that uses the
 turtle to draw a Koch curve with the given length.
 2. Write a function called `snowflake` that draws three Koch curves to make the outline of a snowflake.
+
+![](http://ww1.sinaimg.cn/large/8178ba0ejw1epobtqyf10g20b90b6avq.gif)
 
 **第 0029 题：**The Ackermann function, A(m, n), is defined:
 
@@ -383,7 +387,7 @@ To make the plots, you might have to install matplotlib (see http: // matplotlib
 
 The os module provides a function called walk that is similar to this one but more versatile. Read the documentation and use it to print the names of the files in a given directory and its subdirectories.
 
-**第 0055 题：**Write a function called sed that takes as arguments a pattern string, a replacement string, and two filenames; it should read the first file and write the contents into the second file (creating it if necessary). If the pattern string appears anywhere in the file, it should be replaced with the replacement string.
+**第 0055 题：**Write a function called `sed` that takes as arguments a pattern string, a replacement string, and two filenames; it should read the first file and write the contents into the second file (creating it if necessary). If the pattern string appears anywhere in the file, it should be replaced with the replacement string.
 
 If an error occurs while opening, reading, writing or closing files, your program should catch the exception, print an error message, and exit.
 
@@ -393,11 +397,11 @@ Write a module that imports Solution 0049 and provides two new functions:`store_
 
 **第 0057 题：**In a large collection of MP3 files, there may be more than one copy of the same song, stored in different directories or with different file names. The goal of this exercise is to search for duplicates.
 
-1. Writeaprogramthatsearchesadirectoryandallofitssubdirectories,recursively,andreturns a list of complete paths for all files with a given suffix (like .mp3). Hint: os.path provides several useful functions for manipulating file and path names.
+1. Write a program that searches a directory and all of its subdirectories, recursively, and returns a list of complete paths for all files with a given suffix (like .mp3). Hint: os.path provides several useful functions for manipulating file and path names.
 
-2. To recognize duplicates, you can use md5sum to compute a “checksum” for each files. If two files have the same checksum, they probably have the same contents.
+2. To recognize duplicates, you can use `md5sum` to compute a “checksum” for each files. If two files have the same checksum, they probably have the same contents.
 
-3. To double-check, you can use the Unix command diff.
+3. To double-check, you can use the Unix command `diff`.
 
 **第 0058 题：**有个目录，里面是你自己写过的程序，统计一下你写过多少行代码。包括空行和注释，但是要分别列出来。 via [Yixiaohan/show-me-the-code 第 0013 题](https://github.com/Yixiaohan/show-me-the-code)
 
@@ -440,6 +444,8 @@ canvas.circle([-25,0], 70, outline=None, fill='red')
 The first parameter is the coordinate pair for the center of the circle; the second parameter is the radius.
 
 If you add this line to the program, the result should resemble the national flag of Bangladesh (see http://en.wikipedia.org/wiki/Gallery_of_sovereign-state_flags ).
+
+![](http://ww4.sinaimg.cn/large/8178ba0ejw1epo6fxqs76j20h60hyaar.jpg)
 
 1. Write a function called `draw_rectangle` that takes a Canvas and a Rectangle as arguments and draws a representation of the Rectangle on the Canvas.
 2. Add an attribute named color to your Rectangle objects and modify `draw_rectangle` so that it uses the color attribute as the fill color.
@@ -519,4 +525,4 @@ PokerHand.py : An incomplete implementation of a class that represents a poker h
 
 **第 0067 题：**Write an appropriately general set of functions that can draw shapes as fllow.
 
-![](http://ww1.sinaimg.cn/large/8178ba0ejw1epnx6ht8qpj20jv03ymx7.jpg)
+![](http://ww4.sinaimg.cn/large/8178ba0ejw1epoc041i4ng20b00b63zz.gif)
