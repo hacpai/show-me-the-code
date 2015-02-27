@@ -28,7 +28,7 @@ def flower1( t ):
 
     t: Turtle
     """
-    move( t, -130 )
+    move( t, -100 )
     draw_flower( t, 7, 60.0, 60.0 )
 
 def flower2( t ):
@@ -36,15 +36,15 @@ def flower2( t ):
 
     t: Turtle
     """
-    move( t, 130 )
-    draw_flower( t, 10, 50.0, 80.0 )
+    move( t, 100 )
+    draw_flower( t, 10, 40.0, 80.0 )
 
 def flower3( t ):
     """Draws a flower of picutre3
 
     t: Turtle
     """
-    move( t, 130 )
+    move( t, 100 )
     draw_flower( t, 20, 140.0, 20.0 )
 
 def move( t, length ):
@@ -57,7 +57,7 @@ def move( t, length ):
 world = TurtleWorld()
 
 bob = Turtle()
-bob.delay = 0.001
+bob.delay = 0
 
 flower1( bob )
 flower2( bob )
