@@ -8,7 +8,7 @@ def koch( t, length ):
     length: length
     """
     if length < 3:
-        return bk( t, length )
+        return fd( t, length )
     else:
         length = length / 3.0
         #fd( t, length / 3 )
@@ -31,8 +31,8 @@ def snowflake( t, length ):
     length: length
     """
     for i in range( 3 ):
-        rt( t, 120 )
         koch( t, length )
+        rt( t, 120 )
 
 
 world = TurtleWorld()    
@@ -40,11 +40,11 @@ world = TurtleWorld()
 bob = Turtle()
 bob.delay = 0
 
-bob.x = -120
-bob.y = 20
+bob.x = -150
+bob.y = 90
 bob.redraw()
 
-snowflake( bob, 200)
+snowflake( bob, 300)
 
 world.mainloop()
 
