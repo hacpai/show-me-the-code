@@ -526,3 +526,5 @@ PokerHand.py : An incomplete implementation of a class that represents a poker h
 **第 0067 题：**Write an appropriately general set of functions that can draw shapes as fllow.
 
 ![](http://ww4.sinaimg.cn/large/8178ba0ejw1epoc041i4ng20b00b63zz.gif)
+
+**第 0068 题：**The letters of the alphabet can be constructed from a moderate number of basic elements, like vertical and horizontal lines and a few curves. Design a font that can be drawn with a minimal number of basic elements and then write functions that draw letters of the alphabet.
