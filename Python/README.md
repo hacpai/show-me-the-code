@@ -530,8 +530,16 @@ PokerHand.py : An incomplete implementation of a class that represents a poker h
 **第 0068 题：**The letters of the alphabet can be constructed from a moderate number of basic elements, like vertical and horizontal lines and a few curves. Design a font that can be drawn with a minimal number of basic elements and then write functions that draw letters of the alphabet.
 
 ![](http://ww1.sinaimg.cn/large/8178ba0egw1eppyc0xz65g20b00b6753.gif)
+
 ![](http://ww1.sinaimg.cn/large/8178ba0ejw1epq0ymp9oog20b00b6js3.gif)
 
 **第 0069 题：**Read about spirals at http: // en. wikipedia. org/ wiki/ Spiral ; then write a program that draws an Archimedian spiral (or one of the other kinds).
 
 ![](http://ww4.sinaimg.cn/large/8178ba0ejw1epqitkec9og20b00b67da.gif)
+
+**第 0070 题：**This question is based on a Puzzler that was broadcast on the radio program Car
+Talk (http: // www. cartalk. com/ content/ puzzler/ transcripts/ 200725 ):
+
+Give me a word with three consecutive double letters. I’ll give you a couple of words that almost qualify, but don’t. For example, the word committee, c-o-m-m-i-t-t-e-e. It would be great except for the ‘i’ that sneaks in there. Or Mississippi: M-i-s-s-i-s-s-i-p-p-i. If you could take out those i’s it would work. But there is a word that has three consecutive pairs of letters and to the best of my knowledge this may be the only word. Of course there are probably 500 more but I can only think of one. What is the word?
+
+Write a program to find it.
