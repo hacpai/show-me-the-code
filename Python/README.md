@@ -5,6 +5,7 @@
 - 前 23 题(不包括 0022 题)来自 MOOC 哈工大 @carfly 车万翔老师 OJ 作业题。
 - 第 0022 和 0058 题来自[Yixiaohan/show-me-the-code](https://github.com/Yixiaohan/show-me-the-code), 具体题号已在题目中标注。
 - 第 0023 题后面的题目来自 [Think Python](http://www.greenteapress.com/thinkpython/) 章节练习题
+- 第 0073 题来自阿里的面试题
 
 ----------
 
@@ -340,7 +341,7 @@ Here is an example of what the output might look like:
 ```
 Hint: you might want to build a dictionary that maps from a set of letters to a list of words that can be spelled with those letters. The question is, how can you represent the set of letters in a way that can be used as a key?
 
-1. Modifythepreviousprogramsothatitprintsthelargestsetofanagramsfirst,followedbythe second largest set, and so on.
+1. Modify the previous program so that it prints the largest set of anagrams first,followed by the second largest set, and so on.
 2. In Scrabble a “bingo” is when you play all seven tiles in your rack, along with a letter on the board, to form an eight-letter word. What set of 8 letters forms the most possible bingos? Hint: there are seven.
 
 **第 0050 题：**Two words form a “metathesis pair” if you can transform one into the other by swapping two letters; for example, “converse” and “conserve.” Write a program that finds all of the metathesis pairs in the dictionary. Hint: don’t test all pairs of words, and don’t test all possible swaps. 
@@ -563,3 +564,18 @@ Write a Python program that tests all the six-digit numbers and prints any numbe
 “When I got home I figured out that the digits of our ages have been reversible six times so far. I also figured out that if we’re lucky it would happen again in a few years, and if we’re really lucky it would happen one more time after that. In other words, it would have happened 8 times over all. So the question is, how old am I now?”
 
 Write a Python program that searches for solutions to this Puzzler. Hint: you might find the string method zfill useful.
+
+**第 0073 题：**有一个单词列表，单词首字母有大写有小写。按照单词长度由小到大输出，对于长度相同的单词按字母序由小到大排序，其中小写字母要排在大写字前面。
+
+例如, 单词列表为
+```
+[A, a, AB, aB]
+```
+
+则输出格式应为
+```
+a
+A
+aB
+AB
+```
