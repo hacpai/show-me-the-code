@@ -2,14 +2,14 @@ def make_word_dict(filename='words.txt'):
     """Reads the words in words.txt and return a dictionary
     that contains the word as key.
     """
-    word_dict = {}
+    word_set = set() 
     with open(filename, 'r') as fin:
         for line in fin:
             word = line.strip()
-            word_dict[word] = word
+            word_set.add(word)
     for letter in ['a', 'i', '']:
-        word_dict[letter] = letter
-    return word_dict
+        word_set.add(letter)
+    return word_set
 
 
 def children(word, word_dict):
@@ -62,7 +62,7 @@ def all_reducible(word_dict):
     """Checks all words in the word_dict; returns a list reducible ones.
     """
     res = []
-    for word in word_dict.iterkeys():
+    for word in word_dict:
         t = is_reducible(word, word_dict)
         if t != []:
             res.append(word)
