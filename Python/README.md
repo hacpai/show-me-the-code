@@ -5,7 +5,6 @@
 - 前 23 题(不包括 0022 题)来自 MOOC 哈工大 @carfly 车万翔老师 OJ 作业题。
 - 第 0022 和 0058 题来自[Yixiaohan/show-me-the-code](https://github.com/Yixiaohan/show-me-the-code), 具体题号已在题目中标注。
 - 第 0023 题后面的题目来自 [Think Python](http://www.greenteapress.com/thinkpython/) 章节练习题
-- 第 0073 题来自阿里的面试题
 
 ----------
 
