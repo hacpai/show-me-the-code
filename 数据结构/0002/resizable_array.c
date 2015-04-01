@@ -1,12 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "resizable_array.h"
 
-const BLOCK_SIZE = 20;
+/*typedef struct {*/
+    /*int size;*/
+    /*int *array;*/
+/*} Array;*/
 
-typedef struct {
-    int size;
-    int *array;
-} Array;
+int main()
+{
+    Array my_array = array_create(100);
+    /*array_set(&my_array, 10, 10);*/
+    int number = 0;
+    int cnt = 0;
+    while (number != -1)
+    {
+        scanf("%d", &number);
+        if (number != -1)
+            array_set(&my_array, cnt++, number);
+    } 
+    int val = array_get(&my_array, 10);
+    printf("my_array's size=%d\n", array_size(&my_array));
+    printf("my_array[10]=%d\n", val);
+    array_free(&my_array);
+    return 0;
+}
 
 Array array_create(int init_size)
 {
@@ -61,21 +79,4 @@ void array_inflate(Array *my_array, int more_size)
     my_array->array = p;
 }
 
-int main()
-{
-    Array my_array = array_create(100);
-    array_set(&my_array, 10, 10);
-    int number = 0;
-    int cnt = 0;
-    while (number != -1)
-    {
-        scanf("%d", &number);
-        if (number != -1)
-            array_set(&my_array, cnt++, number);
-    } 
-    int val = array_get(&my_array, 10);
-    printf("my_array's size=%d\n", array_size(&my_array));
-    printf("my_array[10]=%d\n", val);
-    array_free(&my_array);
-    return 0;
-}
+
