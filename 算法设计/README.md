@@ -16,7 +16,7 @@ TSP-旅行商问题，如下图所示，描述为“有n个城市，任何两个
 
 **第 0005 题：**二分查找
 
-    int binSearch(_elem, e, lo, hi)
+    int binSearch(T _elem, T e, int lo, int hi)
 
 语义约定：
 
@@ -25,3 +25,9 @@ TSP-旅行商问题，如下图所示，描述为“有n个城市，任何两个
 要求：
 
 尽可能让 O(clogN) 的系数 c 尽可能的小。
+
+**第 0006 题：**起泡排序
+
+    void bubbleSort(int lo, int hi)
+    
+尽可能将减少不必要的扫描交换。
