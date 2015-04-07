@@ -29,6 +29,15 @@ TSP-旅行商问题，如下图所示，描述为“有n个城市，任何两个
 **第 0006 题：**起泡排序
 
     void bubbleSort(int lo, int hi)
+    int bubble(T _elem[], int lo, int hi)
     
 尽可能将减少不必要的扫描交换。
 
+**第 0007 题：**插值排序
+
+    int interSearch(T _elem[], T e, int lo, int hi)
+
+**第 0008 题：**归并排序
+    mergeSort(int lo, int hi)
+    merge(int lo, int mi, int hi)
+    
