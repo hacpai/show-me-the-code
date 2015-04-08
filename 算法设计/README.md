@@ -38,6 +38,6 @@ TSP-旅行商问题，如下图所示，描述为“有n个城市，任何两个
     int interSearch(T _elem[], T e, int lo, int hi)
 
 **第 0008 题：**归并排序
-    mergeSort(int lo, int hi)
-    merge(int lo, int mi, int hi)
+    void mergeSort(int lo, int hi)
+    void merge(int lo, int mi, int hi)
     
