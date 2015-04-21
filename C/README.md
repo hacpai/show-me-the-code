@@ -328,3 +328,7 @@ no	name	score1	score2	score3	average
 
 输出样例：
     4 3 2 1
+
+**第 0018 题：**二进制文件的读写
+
+fread() 和 fwrite 用法.
