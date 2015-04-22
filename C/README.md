@@ -331,4 +331,5 @@ no	name	score1	score2	score3	average
 
 **第 0018 题：**二进制文件的读写
 
-fread() 和 fwrite 用法.
+你的程序读入学生的姓名，性别，年龄，保存在二进制文件 `student.data` 中，同时再写一个程序可以读出 `student.data` 中的数据。
+
