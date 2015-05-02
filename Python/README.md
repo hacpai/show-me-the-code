@@ -658,3 +658,6 @@ To avoid this problem, you have to store a reference to each PhotoImage you want
 When the user clicks on the image, the program should display the next one.
 
 4. PIL provides a variety of methods for manipulating images. You can read about them at http://pythonware.com/library/pil/handbook . As a challenge, choose a few of these methods and provide a GUI for applying them to images.
+
+**第 0077 题：**有1000瓶啤酒，每喝完一瓶得到一个空瓶子，每3个空瓶子又能换1瓶啤酒，喝掉以后又得到一个空瓶子。问总共能喝多少瓶啤酒?还剩多少空瓶子
+
