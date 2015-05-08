@@ -39,3 +39,8 @@ Now you are supposed to find the largest sum, together with the first and the la
 9. Write a method named add_all_edges that starts with an edgeless Graph and makes a complete graph by adding edges between all pairs of vertices.
 
 ![](http://i.imgur.com/fcMg0z1.png)
+
+**第 0005 题：**随机图
+
+Create a file named RandomGraph.py and define a class named RandomGraph that inherits from Graph and provides a method named add_random_edges that takes a probability p as a parameter and, starting with an edgeless graph, adds edges at random so that the probability is p that there is an edge between any two nodes.
+
