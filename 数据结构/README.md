@@ -44,3 +44,24 @@ Now you are supposed to find the largest sum, together with the first and the la
 
 Create a file named RandomGraph.py and define a class named RandomGraph that inherits from Graph and provides a method named add_random_edges that takes a probability p as a parameter and, starting with an edgeless graph, adds edges at random so that the probability is p that there is an edge between any two nodes.
 
+**第 0006 题：**字符串循环右移
+
+*题目内容：*
+
+输入一个字符串和一个非负整数N，要求将字符串循环右移N次。
+
+*输入格式：*
+
+输入在第1行中给出一个字符串，以'#'表示结束，‘＃’不是字符串的一部分，字符串的长度未知，但至少有一个字符；输入的第2行给出非负整数N。
+
+*输出格式：*
+
+在一行中输出循环右移N次后的字符串。
+
+输入样例：
+
+    Hello World!#
+    2
+输出样例：
+
+    d!Hello Worl
