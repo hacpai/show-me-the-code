@@ -108,7 +108,7 @@ Create a file named RandomGraph.py and define a class named RandomGraph that inh
 *输出样例：*
     1/2 < 3/4
 
-**第 0009 题：**
+**第 0009 题：**大数计算
 
 *题目内容：*
 
