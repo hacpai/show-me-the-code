@@ -341,3 +341,7 @@ no	name	score1	score2	score3	average
 2. 对其各成员进行操作
 3. 以二进制形式输出这个位段
 
+**第 0020 题：**Socket 编程
+
+分别写一个服务端和客户端进行通讯。
+
