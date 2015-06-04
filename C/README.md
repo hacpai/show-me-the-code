@@ -345,3 +345,5 @@ no	name	score1	score2	score3	average
 
 分别写一个服务端和客户端进行通讯。
 
+**第 0021 题：**多线程无线循环输出
+
