@@ -108,27 +108,15 @@ Create a file named RandomGraph.py and define a class named RandomGraph that inh
 *输出样例：*
     1/2 < 3/4
 
-**第 0009 题：**大数计算
+**第 0009 题：**队列的实现
 
-*题目内容：*
-
-很大的数就没办法用int或是long long这样的类型直接计算了，用double则无法保证精度什么的，所以，得自己写程序来算。你的程序要读入两个很大的数，范围在[-10^50, 10^50] 内，然后你的程序要计算它们的和、差及积并输出。
-
-*输入格式:*
-
-两行，每行一个数字。
-
-*输出格式：*
-
-三行，每行一个数字，依次表示输入的数字的和、差及积。
-
-*输入样例：*
-
-    1853244628050278
-    506996688545785164
-
-*输出样例：*
-    508849933173835442
-    -505143443917734886
-    939588889486756266731803978475592
+```
+Queue init_queue();
+void enqueue(Queue *q, Elemtype e);
+void print_queue(Queue *q);
+Node *get_head(Queue *q);
+Node *dequeue(Queue *q);
+void clear_queue(Queue *q);
+void destory_queue(Queue *q);
+```
 
