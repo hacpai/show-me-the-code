@@ -110,6 +110,7 @@ Create a file named RandomGraph.py and define a class named RandomGraph that inh
 
 **第 0009 题：**队列的实现
 
+定义的接口
 ```
 Queue init_queue();
 void enqueue(Queue *q, Elemtype e);
@@ -118,5 +119,22 @@ Node *get_head(Queue *q);
 Node *dequeue(Queue *q);
 void clear_queue(Queue *q);
 void destory_queue(Queue *q);
+```
+
+**第 0010 题：**堆栈的实现
+
+定义的接口
+```
+Stack init_stack();
+void push_stack(Stack *s, Elemtype e);
+void print_stack(Stack *s);
+int stack_length(Stack *s);
+int is_stack_empty(Stack *s);
+int is_stack_full(Stack *s);
+Elemtype get_top_stack(Stack *s);
+Elemtype pop_stack(Stack *s);
+void clear_stack(Stack *s);
+void free_stack(Stack *s);
+char *decimal_to_base_n(int decimal_num, int n); // 十进制转换N进制
 ```
 
