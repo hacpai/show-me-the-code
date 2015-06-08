@@ -11,6 +11,7 @@ typedef struct list {
     Node *head;
 } List;
 
+List init();
 void add(List *pList, int number);
 void print(List *pList);
 void find(List *pList);
@@ -20,8 +21,7 @@ void free_list(List *pList);
 int main()
 {
     int number;
-    List list;
-    list.head = NULL;
+    List list = init();
     do 
     {
         scanf("%d", &number);
@@ -37,6 +37,13 @@ int main()
     
 
     return 0;
+}
+
+List init()
+{
+    List *list = (List *)malloc(sizeof(List));
+    list->head = NULL;
+    return *list;
 }
 
 void add(List *pList, int number)
