@@ -347,3 +347,5 @@ no	name	score1	score2	score3	average
 
 **第 0021 题：**嵌入式开发在 LCD 上显示一个旋转的图片
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/OT8m-5jWZgI?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+
