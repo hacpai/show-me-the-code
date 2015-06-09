@@ -1,48 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-
-typedef int Elemtype;
-
-typedef struct _node 
-{
-    Elemtype data;
-    struct _node *next;
-} Node;
-
-typedef struct _queue
-{
-    Node *first;
-    Node *rear;
-    int length;
-    int lock;
-} Queue;
-
-Queue init_queue();
-void enqueue(Queue *q, Elemtype e);
-void print_queue(Queue *q);
-Node *get_head(Queue *q);
-Node *dequeue(Queue *q);
-void clear_queue(Queue *q);
-void destory_queue(Queue *q);
-
-int main()
-{
-    Queue queue = init_queue();
-    Elemtype num;
-    do 
-    {
-        scanf("%d", &num);
-        if (num != -1)
-        {
-            enqueue(&queue, num);
-        }
-    }
-    while (num != -1);
-    destory_queue(&queue);
-    print_queue(&queue);
-
-    return 0;
-}
+#include "queue.h"
 
 Queue init_queue()
 {
