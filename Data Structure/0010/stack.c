@@ -1,47 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef int Elemtype; 
-#define STACK_MAX_SIZE 1024
-
-typedef struct _seqstack 
-{
-    Elemtype elements[STACK_MAX_SIZE];
-    int top;
-} Stack; 
-   
-Stack init_stack();
-void push_stack(Stack *s, Elemtype e);
-void print_stack(Stack *s);
-int stack_length(Stack *s);
-int is_stack_empty(Stack *s);
-int is_stack_full(Stack *s);
-Elemtype get_top_stack(Stack *s);
-Elemtype pop_stack(Stack *s);
-void clear_stack(Stack *s);
-void free_stack(Stack *s);
-char *decimal_to_base_n(int decimal_num, int n);
-
-int main()
-{
-    Stack stack = init_stack();
-    Elemtype num;
-    do
-    {
-        scanf("%d", &num);
-        if (num != -1)
-        {
-            push_stack(&stack, num);
-        }
-    }
-    while (num != -1);
-    print_stack(&stack);
-    int decimal_num, n_base_num;
-    scanf("%d", &decimal_num);
-    scanf("%d", &n_base_num);
-    printf("%s", decimal_to_base_n(decimal_num, n_base_num));
-    return 0;
-}
+#include "stack.h"
    
 Stack init_stack()
 {
@@ -124,30 +83,19 @@ void free_stack(Stack *s)
     free(s);
 }
 
-char *decimal_to_base_n(int decimal_num, int n)
+int main()
 {
     Stack stack = init_stack();
-    while (decimal_num)
+    Elemtype num;
+    do
     {
-        push_stack(&stack, decimal_num % n);
-        decimal_num = decimal_num / n;
-    }
-    char *p = NULL;
-    char *s = (char *)malloc(sizeof(char)*stack_length(&stack)+1);
-    p = s;
-    while(!is_stack_empty(&stack))
-    {
-        Elemtype e = pop_stack(&stack);
-        if (e >= 0 && e <= 9)
+        scanf("%d", &num);
+        if (num != -1)
         {
-            *s++ = (e + '0');
+            push_stack(&stack, num);
         }
-        else if (e >= 10 && e <= 15)
-        {
-            *s++ = (e - 10 + 'A');
-        }
-        *s = '\0';
     }
-    return p;
+    while (num != -1);
+    print_stack(&stack);
+    return 0;
 }
-
