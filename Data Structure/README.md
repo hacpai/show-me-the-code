@@ -135,7 +135,6 @@ Elemtype get_top_stack(Stack *s);
 Elemtype pop_stack(Stack *s);
 void clear_stack(Stack *s);
 void free_stack(Stack *s);
-char *decimal_to_base_n(int decimal_num, int n); // 十进制转换N进制
 ```
 
 **第 0011 题：**二叉排序树的实现
@@ -150,4 +149,9 @@ void preorder_traverse(BiTNode *pNode);
 void midorder_traverse(BiTNode *pNode);
 void postorder_traverse(BiTNode *pNode);
 ```
+
+**第 0012 题：**十进制转换N进制
+
+定义的接口
+    char *decimal_to_base_n(int decimal_num, int n);
 
