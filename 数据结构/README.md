@@ -138,3 +138,16 @@ void free_stack(Stack *s);
 char *decimal_to_base_n(int decimal_num, int n); // 十进制转换N进制
 ```
 
+**第 0011 题：**二叉排序树的实现
+
+定义的接口
+```
+BiTree init_bitree();
+void insert_bi_sort_tree(BiTree *pTree, char *s);
+BiTNode *create_bi_sort_tree(BiTree *pTree, char *s);
+void access(BiTNode *pNode);
+void preorder_traverse(BiTNode *pNode);
+void midorder_traverse(BiTNode *pNode);
+void postorder_traverse(BiTNode *pNode);
+```
+
