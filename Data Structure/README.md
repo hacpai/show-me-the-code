@@ -155,3 +155,16 @@ void postorder_traverse(BiTNode *pNode);
 定义的接口
     char *decimal_to_base_n(int decimal_num, int n);
 
+**第 0013 题：**图的实现
+
+定义的接口
+
+```
+Graph* init_vertex(Graph *g);
+int find_element(vertex vex[], int n, vertex x);
+Graph* init_edge(Graph *g);
+Graph init_graph();
+void display_graph(Graph *g);
+void access(vertex vex);
+```
+
