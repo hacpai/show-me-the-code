@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "stack.h"
-   
+
 Stack init_stack()
 {
     Stack *s = (Stack *)malloc(sizeof(Stack));
@@ -9,8 +9,15 @@ Stack init_stack()
     return *s;
 }
 
+void check_stack_null(Stack *s)
+{
+    if (s == NULL)
+        perror("Stack is NULL.");
+}
+
 void push_stack(Stack *s, Elemtype e)
 {
+    check_stack_null(s);
     if (s->top == STACK_MAX_SIZE - 1)
     {
         printf("Stack is full.\n");
@@ -21,6 +28,7 @@ void push_stack(Stack *s, Elemtype e)
 
 void print_stack(Stack *s)
 {
+    check_stack_null(s);
     for (int i = 0; i < stack_length(s); i++)
         printf("%d\t", s->elements[i]);
     printf("\n");
@@ -28,16 +36,19 @@ void print_stack(Stack *s)
 
 int stack_length(Stack *s)
 {
+    check_stack_null(s);
     return s->top + 1;
 }
 
 int is_stack_empty(Stack *s)
 {
+    check_stack_null(s);
     return s->top < 0;
 }
 
 int is_stack_full(Stack *s)
 {
+    check_stack_null(s);
     return s->top >= STACK_MAX_SIZE - 1;
 }
 
@@ -74,6 +85,7 @@ Elemtype pop_stack(Stack *s)
 
 void clear_stack(Stack *s)
 {
+    check_stack_null(s);
     s->top = -1;
 }
 
@@ -99,3 +111,4 @@ int main()
     print_stack(&stack);
     return 0;
 }
+

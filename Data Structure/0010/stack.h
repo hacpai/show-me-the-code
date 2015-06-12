@@ -11,6 +11,7 @@ typedef struct _seqstack
 } Stack; 
    
 Stack init_stack();
+void check_stack_null(Stack *s);
 void push_stack(Stack *s, Elemtype e);
 void print_stack(Stack *s);
 int stack_length(Stack *s);
