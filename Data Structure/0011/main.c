@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "bitree.h"
 
 int main()
@@ -11,6 +12,8 @@ int main()
     preorder_traverse(root);
     printf("\n");
     midorder_traverse(root);
+    BiTNode *ret = delete_bitnode(&bitree, 'F');
+    free(ret);
     printf("\n");
     postorder_traverse(root);
     printf("\n");

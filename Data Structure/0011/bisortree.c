@@ -86,3 +86,167 @@ void postorder_traverse(BiTNode *pNode)
     }
 }
 
+BiTNode *find_bitnode(BiTree *pTree, ElementType e)
+{
+    BiTNode *pNode = (BiTNode *)malloc(sizeof(BiTNode));
+    pNode->data = e;
+    pNode->lchild = NULL;
+    pNode->rchild = NULL;
+    BiTNode *p = pTree->root;
+    while (p && pNode->data != p->data)
+    {
+        if (pNode->data > p->data)
+        {
+            p = p->rchild;
+        }
+        else
+        {
+            p = p->lchild;
+        }
+    }
+    return p;
+}
+ 
+BiTNode *find_last_bitnode(BiTree *pTree, ElementType e)
+{
+    BiTNode *pNode = (BiTNode *)malloc(sizeof(BiTNode));
+    pNode->data = e;
+    pNode->lchild = NULL;
+    pNode->rchild = NULL;
+    BiTNode *p = pTree->root;
+    BiTNode *last = NULL;
+    while (p && pNode->data != p->data)
+    {
+        last = p;
+        if (pNode->data > p->data)
+        {
+            p = p->rchild;
+        }
+        else
+        {
+            p = p->lchild;
+        }
+    }
+    return last;
+}
+
+BiTNode *find_left_bitree_largest_bitnode(BiTNode *pNode)
+{
+    BiTNode *p = pNode->lchild;
+    while (p->rchild)
+    {
+        p = p->rchild;
+    }
+    return p;
+} 
+
+BiTNode *find_right_bitree_littlest_bitnode(BiTNode *pNode)
+{
+    BiTNode *p = pNode->rchild;
+    while (p->lchild)
+    {
+        p = p->lchild;
+    }
+    return p;
+}
+
+BiTNode *delete_leaf_bitnode(BiTree *pTree, BiTNode *current, BiTNode *last)
+{
+    last->lchild = last->rchild = NULL;
+    return current; 
+}
+
+BiTNode *delete_degree_is_one_bitnode(BiTree *pTree, BiTNode *current, BiTNode *last)
+{
+    if (current->lchild)
+    {
+        if (last->lchild == current)
+            last->lchild = current->lchild;
+        else
+            last->rchild = current->lchild;
+    }
+    else
+    {
+        if (last->lchild == current)
+            last->lchild = current->rchild;
+        else
+            last->rchild = current->rchild;
+    }
+    return current;
+}
+
+BiTNode *delete_degree_is_two_bitnodes(BiTree *pTree, BiTNode *current, BiTNode *last)
+{
+    BiTNode *p = NULL;
+    BiTNode *node = NULL;
+    if (last->lchild == current)
+    {
+        node = find_right_bitree_littlest_bitnode(current);
+    }
+    else
+    {
+        node = find_left_bitree_largest_bitnode(current);
+    }
+    ElementType temp = node->data;
+    BiTNode *penult = find_last_bitnode(pTree, temp);
+    if (node->lchild || node->rchild)
+    {
+        p = delete_degree_is_one_bitnode(pTree, node, penult);
+    }
+    else
+    {
+        p = delete_leaf_bitnode(pTree, node, penult);
+    }
+    current->data = temp;
+    return p;
+}
+
+BiTNode *delete_bitnode(BiTree *pTree, ElementType e)
+{
+    BiTNode *last = find_last_bitnode(pTree, e);
+    BiTNode *current = find_bitnode(pTree, e);
+    BiTNode *p = NULL;
+    if (last)
+    {
+        if (current->lchild && current->rchild)
+        {
+            p = delete_degree_is_two_bitnodes(pTree, current, last);
+        }
+        else if (current->lchild || current->rchild)
+        {
+            p = delete_degree_is_one_bitnode(pTree, current, last);
+        }
+        else
+        {
+            p = delete_leaf_bitnode(pTree, current, last);
+        }
+    }
+    else
+    {
+        if (current->lchild && current->rchild)
+        {
+            pTree->root = current->lchild;
+            pTree->root->rchild = current->rchild;
+        }
+        else if (current->lchild || current->rchild)
+        {
+            if (current->lchild)
+            {
+                pTree->root = current->lchild;
+                current->lchild = NULL;
+            }
+            else
+            {
+                pTree->root = current->rchild;
+                current->rchild = NULL;
+            }
+        }
+        else
+        {
+            pTree->root = NULL;
+        }
+        p = current;
+    }
+    return p;
+}
+
