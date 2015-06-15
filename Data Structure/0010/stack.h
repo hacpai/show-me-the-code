@@ -21,6 +21,5 @@ Elemtype get_top_stack(Stack *s);
 Elemtype pop_stack(Stack *s);
 void clear_stack(Stack *s);
 void free_stack(Stack *s);
-char *decimal_to_base_n(int decimal_num, int n);
 
 #endif
