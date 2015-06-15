@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include "stack.h"
+#include "bitree.h"
 
 void preorder_traverse_not_recur(BiTNode *pNode)
 {
     Stack stack = init_stack();
     push_stack(&stack, pNode);
     BiTNode *p = NULL;
-    while (!is_stack_empty(&stack))
+    while (pNode && !is_stack_empty(&stack))
     {
         p = pop_stack(&stack);
         access(p);
@@ -43,7 +44,7 @@ void postorder_traverse_not_recur(BiTNode *pNode)
     BiTNode *p = pNode;
     push_stack(&stack, p);
     BiTNode *last = NULL;
-    while (!is_stack_empty(&stack))
+    while (p && !is_stack_empty(&stack))
     {
         if (p->lchild)
         {
@@ -68,3 +69,19 @@ void postorder_traverse_not_recur(BiTNode *pNode)
     }
 }
 
+
+int main()
+{
+    ElementType ch;
+    BiTree bitree = init_bitree();
+    char order[1024];
+    scanf("%s", order);
+    BiTNode *root = create_bi_sort_tree(&bitree, order);
+    preorder_traverse_not_recur(bitree.root);
+    printf("\n");
+    midorder_traverse_not_recur(bitree.root);
+    printf("\n");
+    postorder_traverse_not_recur(bitree.root);
+    printf("\n");
+    return 0;
+}
