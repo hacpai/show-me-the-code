@@ -181,3 +181,18 @@ void access(vertex vex);
 
 **第 0014 题：**非递归实现前序，中序，后序遍历二叉树
 
+**第 0015 题：**二叉平衡树(AVL 树)的实现
+
+定义的接口
+
+```
+AvlTree *init();
+int height(AvlTree *t);
+int max(int a, int b);
+AvlTree *insert(AvlTree *t, ElementType x);
+AvlTree *single_rotate_with_left(AvlTree *t);
+AvlTree *single_rotate_with_right(AvlTree *t);
+AvlTree *double_rotate_left_right(AvlTree *t);
+AvlTree *double_rotate_right_left(AvlTree *t);
+```
+
