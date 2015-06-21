@@ -90,10 +90,17 @@ void access(vertex vex)
     printf("%c ", vex);
 }
 
-int main()
+int find_adj_vex(Graph *g, int vex_index, int last_index)
 {
-    Graph g = init_graph();
-    display_graph(&g);
-    return 0;
+    int index = -1;
+    for (int col = last_index; col < g->vexnum; col++)
+    {
+        if (g->w[vex_index][col] < INF)
+        {
+            index = col;
+            break;
+        }
+    }
+    return index;
 }
 

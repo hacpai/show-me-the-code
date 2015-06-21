@@ -7,6 +7,8 @@ typedef int weight;
 #define INF 65535
 #define MAX_VEX 100
 
+extern int visted_vex[MAX_VEX];
+
 typedef struct _graph {
     vertex vex[MAX_VEX];
     weight w[MAX_VEX][MAX_VEX];
@@ -20,5 +22,6 @@ Graph* init_edge(Graph *g);
 Graph init_graph();
 void display_graph(Graph *g);
 void access(vertex vex);
+int find_adj_vex(Graph *g, int vex_index, int last_index);
 
 #endif
