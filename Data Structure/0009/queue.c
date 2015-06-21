@@ -84,3 +84,11 @@ void destory_queue(Queue *q)
     free(q);
 }
 
+int is_empty(Queue *q)
+{
+    int ret = 0;
+    if (q->length == 0)
+        ret = 1;
+    return ret;
+}
+

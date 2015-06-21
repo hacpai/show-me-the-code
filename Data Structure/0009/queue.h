@@ -24,5 +24,6 @@ Node *get_head(Queue *q);
 Node *dequeue(Queue *q);
 void clear_queue(Queue *q);
 void destory_queue(Queue *q);
+int is_empty(Queue *q);
 
 #endif
