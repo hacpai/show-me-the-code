@@ -119,6 +119,7 @@ Node *get_head(Queue *q);
 Node *dequeue(Queue *q);
 void clear_queue(Queue *q);
 void destory_queue(Queue *q);
+int is_empty(Queue *q);
 ```
 
 **第 0010 题：**堆栈的实现
@@ -177,6 +178,7 @@ Graph* init_edge(Graph *g);
 Graph init_graph();
 void display_graph(Graph *g);
 void access(vertex vex);
+int find_adj_vex(Graph *g, int vex_index, int last_index);
 ```
 
 **第 0014 题：**非递归实现前序，中序，后序遍历二叉树
@@ -200,4 +202,3 @@ AvlTree *double_rotate_right_left(AvlTree *t);
 
 **第 0017 题：**Dijkstra 最短路径算法
 
-**第 0018 题：**Floyd 最短路径算法
