@@ -58,3 +58,8 @@ Sqrt 接收到一个负数时，应当返回一个非 nil 的错误值。复数�
 注意： 在 Error 方法内调用 fmt.Sprint(e) 将会让程序陷入死循环。可以通过先转换 e 来避免这个问题：`fmt.Sprint(float64(e))`。请思考这是为什么呢？
 
 修改 Sqrt 函数，使其接受一个负数时，返回 ErrNegativeSqrt 值。
+
+**第 0006 题：** Reader
+
+实现一个 Reader 类型，它不断生成 ASCII 字符 'A' 的流。
+
