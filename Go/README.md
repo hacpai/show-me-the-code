@@ -20,3 +20,9 @@
 
 实现一个 fibonacci 函数，返回一个函数（一个闭包）可以返回连续的斐波纳契数。
 
+**第 0003 题：**type Stringer interface { String() string } 接口
+
+让 IPAddr 类型实现 fmt.Stringer 以便用点分格式输出地址。
+
+例如，`IPAddr{127,0,0,1}` 应当输出 `"127.0.0.1"`。
+
