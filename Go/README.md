@@ -72,3 +72,20 @@ Sqrt 接收到一个负数时，应当返回一个非 nil 的错误值。复数�
 编写一个实现了 io.Reader 的 `rot13Reader`， 并从一个 io.Reader 读取， 利用 rot13 代换密码对数据流进行修改。
 
 已经帮你构造了 rot13Reader 类型。 通过实现 Read 方法使其匹配 `io.Reader`。
+
+**第 0008 题：** HTTP 处理
+
+实现下面的类型，并在其上定义 ServeHTTP 方法。在 web 服务器中注册它们来处理指定的路径。
+
+type String string
+
+type Struct struct {
+    Greeting string
+    Punct    string
+    Who      string
+}
+例如，可以使用如下方式注册处理方法：
+
+http.Handle("/", Hello{})
+http.Handle("/string", String("I'm a frayed knot."))
+http.Handle("/struct", &Struct{"Hello", ":", "Gophers!"})
