@@ -101,3 +101,14 @@ Bounds 应当返回一个 `image.Rectangle`，例如 `image.Rect(0, 0, w, h)`。
 ColorModel 应当返回 `color.RGBAModel`。
 
 At 应当返回一个颜色；在这个例子里，在最后一个图片生成器的值 v 匹配 `color.RGBA{v, v, 255, 255}`。
+
+**第 0010 题：**表单
+
+`GET` 用于获取和查询资源的信息
+
+`POST` 用于更新资源信息
+
+搭建一个 Web 服务器，设置访问的路由。
+
+1. `/login` 用于处理表单的输入，
+2. `upload` 用于文件的上传。
