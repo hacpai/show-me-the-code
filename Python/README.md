@@ -661,3 +661,7 @@ When the user clicks on the image, the program should display the next one.
 
 **第 0077 题：**有1000瓶啤酒，每喝完一瓶得到一个空瓶子，每3个空瓶子又能换1瓶啤酒，喝掉以后又得到一个空瓶子。问总共能喝多少瓶啤酒?还剩多少空瓶子
 
+**第 0078 题：**对文件的批量操作
+
+1. 将 aaaBbbCcc 的文件名转化为 aaa-bbb-ccc
+2. 在文件中添加相关的字段
