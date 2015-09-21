@@ -115,3 +115,7 @@ At 应当返回一个颜色；在这个例子里，在最后一个图片生成�
 * `/upload` 用于文件的上传。
 
 2. `mime.go` 模拟客户端上传
+
+**第 0011 题：**slice 中删除给定的子 slice
+
+    func remove(slice []Type, elems ...Type) []Type
