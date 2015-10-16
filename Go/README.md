@@ -120,5 +120,5 @@ At 应当返回一个颜色；在这个例子里，在最后一个图片生成�
 
     func remove(slice []Type, elems ...Type) []Type
 
-**第 0012 题：**并发发送数据包
+**第 0012 题：**构建 goroutines 池
 

@@ -9,7 +9,7 @@ import (
 )
 
 func send() {
-	service := "10.210.227.108:1200"
+	service := "10.77.109.166:1200"
 	tcpAddr, err := net.ResolveTCPAddr("tcp4", service)
 	checkError(err)
 	conn, err := net.DialTCP("tcp", nil, tcpAddr)
@@ -28,8 +28,8 @@ func checkError(err error) {
 }
 
 func main() {
-	NumEl := 10  // Number of times the external program is called
-	NumCore := 1 // Number of available cores
+	NumEl := 100000 // Number of times the external program is called
+	NumCore := 40   // Number of available cores
 	c := make(chan bool, NumCore-1)
 	wg := new(sync.WaitGroup)
 	wg.Add(NumEl) // Set the number of goroutines to (0 + NumEl)
